@@ -8,9 +8,9 @@
 <p id="result"></p>
 <script>
     let year = parseInt(prompt("Nhập giá trị Năm: " ));
-    let month = 0
+    let month = 1
     if ( month <= 1 || month <=12 ) {
-        switch (month)  {
+        switch (month) {
         case 1:
         case 3:
         case 5:
@@ -18,17 +18,17 @@
         case 8:
         case 10:
         case 12:
-            document.write("thang 2 năm "+year" co 30 ngay! ");
+            document.write("thang 2 năm "+year+" co 30 ngay! ")
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            document.write("thang 2 năm "+year+" co 31 ngay!");
+            document.write("thang 2 năm "+year+" co 31 ngay!")
             break;
         case 2:
             if(year % 4 === 0)
-                document.write("nam nay la nam nhuan co 29 ngay ");
+                document.write("nam nay la nam nhuan co 29 ngay ")
             else
                 document.write("thang nay co 28 ngay");
             break;
